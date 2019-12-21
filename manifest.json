@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Counter",
+  "version": "1",
+  "icons": {
+    "128": "icon.png"
+  },
+  "permissions": [],
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "minimum_chrome_version": "28",
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+}
