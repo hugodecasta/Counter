@@ -1,16 +1,17 @@
 {
-  "manifest_version": 2,
-  "name": "Counter",
-  "version": "1",
-  "icons": {
-    "128": "icon.png"
-  },
-  "permissions": [],
-  "app": {
-    "background": {
-      "scripts": ["background.js"]
-    }
-  },
-  "minimum_chrome_version": "28",
-  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
-}
+    "short_name": "Counter",
+    "name": "Counter",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "fullscreen",
+    "Scope": "/",
+    "orientation": "portrait",
+    "icons": [
+      {
+        "src": "icon.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "index.html"
+  }

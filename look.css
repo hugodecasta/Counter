@@ -7,4 +7,92 @@ body {
     color:rgb(56, 142, 255);
 }
 
+.container {
+    position: absolute;
+    left:0px;
+    right:0px;
+    width:100%;
+    height:100%;
+    color:#fff;
+    transition: all 0.3s;
+}
+
 /* ------------------------------------------------- */
+
+.counter {
+    border-radius: 120px;
+    background: rgb(56, 142, 255);
+    margin:10px;
+    padding:10px;
+    color:#fff;
+    text-align: center;
+    animation: appear 0.3s forwards;
+}
+
+@keyframes appear {
+    0%{opacity: 0; transform: translateY(20px);}
+    100%{opacity: 1; transform: translateY(0);}
+}
+
+/* ------------------------------------------------- */
+
+.btn {
+    position: absolute;
+    width:50px;
+    height:42px;
+    border-radius: 1000px;
+    text-align: center;
+    padding-top:8px;
+}
+
+.addCounter {
+    right: 10px;
+    bottom: 10px;
+    background: rgb(56, 142, 255);
+}
+
+.back {
+    top: 10px;
+    left: 10px;
+    background: #fff;
+}
+
+.remove {
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid #fff;
+}
+
+/* ------------------------------------------------- */
+
+.points {
+    position: absolute;
+    left:calc(50% - 100px);
+    top:calc(50% - 100px);
+    width:200px;
+    height:200px;
+    border: 2px solid #fff;
+    border-radius: 1000px;
+    text-align: center;
+    transition:all 0.3s;
+}
+
+.points:active {
+    transition:all 0s;
+    background:#fff;
+}
+
+.points .number {
+    font-size:70px;
+    margin-top: 60px;
+}
+
+.depoints {
+    position: absolute;
+    width:70px;
+    height:70px;
+    left:calc(50% - 120px);
+    top:calc(50% + 30px);
+    border: 2px solid #fff;
+    border-radius: 1000px;
+}
