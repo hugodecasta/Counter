@@ -105,6 +105,8 @@ async function display_points() {
     user_mirror.on_prop('set_prop',['counter',current_counter.id],'color',function(new_color) {
         let color = '#'+new_color
         adder.css('background',color)
+        back.css('color',color)
+        remove.css('color',color)
         container.css('background',color)
         $('meta[name=theme-color]').attr('theme-color',color)
     })
