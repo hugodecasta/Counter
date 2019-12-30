@@ -5,6 +5,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     color:rgb(56, 142, 255);
+    line-height: normal;
 }
 
 .container {
@@ -58,9 +59,18 @@ body {
 }
 
 .remove {
+    position: absolute;
     right: 10px;
     bottom: 10px;
-    border: 1px solid #fff;
+}
+
+.incounter {
+    background:#fff;
+}
+
+.mdl-button--flat.incounter {
+    background:transparent;
+    color:#fff;
 }
 
 /* ------------------------------------------------- */
